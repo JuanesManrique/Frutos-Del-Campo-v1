@@ -104,12 +104,6 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .gmail-button {
+    .contact-button {
         width: 254px;
-        /* height: 62px; */
-    }
-
-    .whatsapp-button {
-        width: 254px;
-        /* height: 62px; */
     }
