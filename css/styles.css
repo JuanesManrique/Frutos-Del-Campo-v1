@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif
+    }
+    html{
+    font-size: 62.5%;
+    }
+    /* HEADER */
+    header{
+        display: flex;
+    }
+    
+    .logo img {
+        max-width: 70px;
+    }
+    
+    /* INICIO */
+    
+    /* PARTNERS */
+    
+    /* QUIENES SOMOS */
+    
+    /* POLICY-QUALITY */
+    
+    /* FRUTAS DE EXPORTACION */
+    
+    /* CERTIFICATE */
+    
+    /* CONTACT US */
