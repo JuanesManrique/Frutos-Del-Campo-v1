@@ -176,7 +176,9 @@
         grid-template-rows: 1fr auto;
     }
 
-    .contact{
+    .grid-container {
+        max-width: 1080px;
+        margin: auto;
         display: grid;
         max-width: 1080px;
         margin: auto;
@@ -209,6 +211,6 @@
 
     .footer {
         height: 80px;
-        grid-column: span 2;
+        grid-column: span 1;
         border: solid 1px rgb(252, 0, 0);
     }
