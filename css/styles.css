@@ -164,6 +164,59 @@
     /* FRUTAS DE EXPORTACION */
     
     /* CERTIFICATE */
+    .certificate{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1080px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .certificate-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .certificate-info h1{
+        font-weight: 400;
+        font-size: 60px;
+        color: var(--verde_oscuro);
+        line-height: 60px;
+    }
+
+    .certificate-info p{    
+        font-size: 16px;
+        margin-top: 25px;
+    }
+
+    .certificate-info a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #fff;
+        width: 200px;
+        text-decoration: none;
+        padding: 15px;
+        background-color: var(--verde_claro);
+    }
+
+    .certificate-info svg {
+        color: #fff;
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .certificate-imges {
+        padding: 20px;
+    }
+
+    .certificate-imges img {
+        max-width: 100%;
+    }
+
     
     /* CONTACT US */
     .contact-container {
