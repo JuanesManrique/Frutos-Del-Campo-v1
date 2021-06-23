@@ -45,6 +45,8 @@
     .izquierda{
         display: flex;
         align-items: center;
+        text-decoration: none;
+        color: var(--negro);
     }
 
     .logo img {
@@ -255,6 +257,10 @@
         padding: 20px;
         max-width: 1080px;
         justify-content: space-between;
+    }
+
+    .footer__info a{
+        text-decoration: none;
     }
 
     .footer p{
