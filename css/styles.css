@@ -191,6 +191,11 @@
         flex-direction: column;
         justify-content: center;
     }
+    .left-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     .buttons-container {
         display: grid;
