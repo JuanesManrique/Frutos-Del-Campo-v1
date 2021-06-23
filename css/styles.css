@@ -120,9 +120,9 @@
 
     .info h1{
         font-weight: 400;
-        font-size: 60px;
+        font-size: 6rem;
         color: var(--verde_oscuro);
-        line-height: 60px;
+        line-height: 6rem;
     }
 
     .info p{    
@@ -162,11 +162,184 @@
     /* PARTNERS */
     
     /* QUIENES SOMOS */
+    .quienes-somos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1080px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .quienes-somos-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        text-align: right;
+    }
+
+    .quienes-somos-info h1{
+        font-weight: 400;
+        font-size: 4rem;
+        color: var(--verde_oscuro);
+        line-height: 4rem;
+    }
+
+    .quienes-somos-info p{    
+        font-size: 1.6rem;
+        /* margin-top: 20px; */
+    }
+
+    .quienes-somos-info a{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 14px;
+        color: #fff;
+        width: 250px;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: var(--verde_claro);
+    }
+
+    .quienes-somos svg {
+        color: #fff;
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .quienes-somos-imges {
+        padding: 20px;
+    }
+
+    .quienes-somos img {
+        max-width: 80%;
+    }
     
     /* POLICY-QUALITY */
+    .politica {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1080px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .politica-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .politica-info h1{
+        font-weight: 400;
+        font-size: 4rem;
+        color: var(--verde_oscuro);
+        line-height: 4rem;
+    }
+
+    .politica-info p{    
+        font-size: 1.6rem;
+        margin-top: 25px;
+    }
+
+    .politica-info a{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 14px;
+        color: #fff;
+        width: 240px;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: var(--verde_claro);
+    }
+
+    .politica-info svg {
+        color: #fff;
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .politica-imges {
+        padding: 20px;
+    }
+
+    .politica-imges img {
+        max-width: 80%;
+    }
     
     /* FRUTAS DE EXPORTACION */
-    
+    .exportacion{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1080px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .exportacion-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px;
+        text-align: right;
+    }
+
+    .exportacion-info h1{
+        font-weight: 400;
+        font-size: 4rem;
+        color: var(--verde_oscuro);
+        line-height: 4rem;
+    }
+
+    .exportacion-info h2{
+        font-weight: 400;
+        font-size: 2rem;
+        color: var(--verde_oscuro);
+        line-height: 60px;
+    }
+
+    .exportacion-info p{    
+        font-size: 1.6rem;
+        /* margin-top: 20px; */
+    }
+
+    .exportacion-info a{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 14px;
+        color: #fff;
+        width: 250px;
+        text-decoration: none;
+        margin-top: 20px;
+        padding: 10px 15px;
+        border-radius: 10px;
+        background-color: var(--verde_claro);
+    }
+
+    .exportacion svg {
+        color: #fff;
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .exportacion-imges {
+        padding: 20px;
+    }
+
+    .exportacion img {
+        max-width: 80%;
+    }
+
     /* CERTIFICATE */
     .certificate{
         display: grid;
@@ -185,32 +358,34 @@
 
     .certificate-info h1{
         font-weight: 400;
-        font-size: 60px;
+        font-size: 4rem;
         color: var(--verde_oscuro);
-        line-height: 60px;
+        line-height: 4rem;
     }
 
     .certificate-info p{    
-        font-size: 16px;
+        font-size: 1.6rem;
         margin-top: 25px;
     }
 
     .certificate-info a{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         font-size: 14px;
         color: #fff;
-        width: 200px;
+        width: 240px;
         text-decoration: none;
-        padding: 15px;
+        margin-top: 20px;
+        padding: 10px 15px;
+        border-radius: 10px;
         background-color: var(--verde_claro);
     }
 
     .certificate-info svg {
         color: #fff;
         width: 25px;
-        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .certificate-imges {
@@ -218,7 +393,7 @@
     }
 
     .certificate-imges img {
-        max-width: 100%;
+        max-width: 80%;
     }
 
     
@@ -241,8 +416,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-
 
     .right-container {
         color: #fff;
