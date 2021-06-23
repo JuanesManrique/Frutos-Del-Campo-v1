@@ -167,24 +167,28 @@
     
     /* CONTACT US */
     .contact-container {
+        padding-top: 100px ;
         height: 560px;
-        margin: auto;
-        display: grid;
-        grid-template-rows: 1fr auto;
         background-image: url(https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624399332/img/fondo_verde_ai13jz.svg);
         background-repeat: no-repeat;
         background-size: 100vw;
+        display: grid;
+        grid-template-rows: 1fr auto;
     }
 
-    .grid-container {
-        max-width: 1080px;
+    .contact{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr auto;
-        text-align: right;
+        max-width: 1080px;
+        margin: auto;
+        grid-template-columns: auto auto;
+    }
+
+    .map{
+
     }
 
     .right-container {
+        text-align:right;
         padding: 0 20px;
         display: flex;
         flex-direction: column;
