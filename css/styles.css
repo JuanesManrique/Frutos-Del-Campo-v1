@@ -179,10 +179,9 @@
     .grid-container {
         max-width: 1080px;
         margin: auto;
+        width: 100%;
         display: grid;
-        max-width: 1080px;
-        margin: auto;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 
 
