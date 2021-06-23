@@ -128,6 +128,24 @@
         margin-top: 25px;
     }
 
+    .info a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: #fff;
+        width: 200px;
+        text-decoration: none;
+        padding: 15px;
+        background-color: var(--verde_claro);
+    }
+
+    .info svg {
+        color: #fff;
+        width: 25px;
+        margin-right: 10px;
+    }
+
     .portada {
         padding: 20px;
     }
