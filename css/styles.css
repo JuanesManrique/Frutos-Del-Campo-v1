@@ -10,6 +10,10 @@
 
     :root{
         --verde_oscuro: #33743A;
+        --verde_claro: #A2B715;
+        --amarillo: #DCB338;
+        --gris: #636363;
+        --negro:#000;
     }
 
     /* .fondo{
