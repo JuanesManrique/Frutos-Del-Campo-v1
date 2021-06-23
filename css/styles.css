@@ -45,6 +45,8 @@
     .izquierda{
         display: flex;
         align-items: center;
+        text-decoration: none;
+        color: var(--negro);
     }
 
     .logo img {
@@ -125,7 +127,7 @@
 
     .info p{    
         font-size: 16px;
-        margin-top: 25px;
+        margin-top: 20px;
     }
 
     .info a{
@@ -136,13 +138,15 @@
         color: #fff;
         width: 200px;
         text-decoration: none;
-        padding: 15px;
+        margin-top: 20px;
+        padding: 10px 15px;
+        border-radius: 10px;
         background-color: var(--verde_claro);
     }
 
     .info svg {
         color: #fff;
-        width: 25px;
+        width: 20px;
         margin-right: 10px;
     }
 
@@ -270,7 +274,7 @@
         justify-content: center;
         align-items: center;
     }
-
+    
     .mapa{
         padding: 10px;
         width: 100%;
@@ -295,16 +299,21 @@
     }
 
     .footer {
-        height: 65px;
+        height: 70px;
         grid-column: span 1;
     }
 
     .footer__info{
         display: flex;
         margin: auto;
+        line-height: 2;
         padding: 20px;
         max-width: 1080px;
         justify-content: space-between;
+    }
+
+    .footer__info a{
+        text-decoration: none;
     }
 
     .footer p{
@@ -322,7 +331,7 @@
 
     .marca img{
         margin-left: 10px;
-        width: 150px;
+        height: 25px;
     }
 
     .redes__sociales {
@@ -332,7 +341,7 @@
     }
     
     .redes__sociales a {
-        margin: 0 0;
+        margin: 2px 0;
     }
     
     .redes__sociales p {
@@ -342,7 +351,7 @@
     }
     
     .redes__sociales svg {
-        width: 30px;
+        width: 25px;
         margin-left: 5px;
         color: rgb(255, 255, 255);
     }
