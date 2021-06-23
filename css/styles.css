@@ -8,6 +8,10 @@
     font-size: 62.5%;
     }
 
+    :root{
+        --verde_oscuro: #33743A;
+    }
+
     /* .fondo{
         height: 100vh;
         background-image: url(/img/fondo.svg);
@@ -102,13 +106,22 @@
     }
 
     .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 20px;
     }
 
     .info h1{
         font-weight: 400;
         font-size: 60px;
+        color: var(--verde_oscuro);
         line-height: 60px;
+    }
+
+    .info p{    
+        font-size: 16px;
+        margin-top: 25px;
     }
 
     .portada {
