@@ -28,7 +28,6 @@
         background-size: 120vw 120vh;
         background-repeat: no-repeat;
         background-attachment: fixed;
-
     }
 
     /* HEADER */
@@ -396,7 +395,16 @@
         max-width: 80%;
     }
 
-    
+    /* MULTIMEDIA */
+
+    .multimedia{
+        background-color: red;
+        max-width: 1080px;
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
+
     /* CONTACT US */
     .contact-container {
         padding-top: 100px ;
