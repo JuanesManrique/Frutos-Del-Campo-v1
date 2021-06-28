@@ -6,6 +6,35 @@
     margin-top: 20px;
 }
 
+.quienes-somos-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.quienes-somos-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienes-somos-button button {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--verde_claro);
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.30);
+}
+
+.quienes-somos-button .chevron {
+    margin: 0;
+    width: 25px;
+}
+
 .quienes-somos-info {
     display: flex;
     flex-direction: column;
@@ -33,17 +62,32 @@
     margin: 20px 0 20px;
 }
 
+.quienes-somos-info .buttons-container {
+    display: flex;
+}
+
 .quienes-somos-info a{
+    margin: 20px 0 0 20px;
+    padding: 10px 15px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 14px;
-    color: #fff;
-    width: 250px;
+    color: black;
     text-decoration: none;
-    margin-top: 20px;
-    padding: 10px 15px;
     border-radius: 10px;
+    border: solid 1px var(--verde_claro);
+    background-color: white;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.30);
+}
+
+.quienes-somos-info a:active {
+    color: white;
+    background-color: var(--verde_claro);
+}
+
+.quienes-somos-info a:hover {
+    color: white;
     background-color: var(--verde_claro);
 }
 
@@ -55,6 +99,8 @@
 
 .quienes-somos-imges {
     padding: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .quienes-somos img {
