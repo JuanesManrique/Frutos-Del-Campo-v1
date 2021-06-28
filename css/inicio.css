@@ -15,9 +15,9 @@
 
 .info h1{
     font-weight: 400;
-    font-size: 6rem;
+    font-size: 60px;
     color: var(--verde_oscuro);
-    line-height: 6rem;
+    line-height: 60px;
 }
 
 .info p{    
