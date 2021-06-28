@@ -1,0 +1,18 @@
+.partners {
+    max-width: 1080px;
+    margin: auto;
+    margin-top: 20px 0 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.partners-container {
+    width: 70vw;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px -5px rgba(0,0,0,0.40);
+}
