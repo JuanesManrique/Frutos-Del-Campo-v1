@@ -1,0 +1,67 @@
+header{
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    justify-content: space-between;
+}
+
+.izquierda{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--negro);
+}
+
+.logo img {
+    max-width: 60px;
+}
+
+.orgullo{
+    margin-left: 20px;
+}
+
+.orgullo p{
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.orgullo strong {
+    top: -10px;
+    font-size: 25px;
+}
+
+.idioma{
+    display: flex;
+    font-size: 14px;
+}
+
+.idioma svg{
+    margin-left: 5px;
+    width: 20px;
+}
+
+.bandera{
+    margin-left: 5px;
+    width: 20px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #636363 ;
+}
+
+.nav a:hover{
+    text-decoration: violet;
+}
+
+.nav li {
+    font-size: 16px;;
+    margin-left: 20px;
+    list-style: none;
+}
