@@ -30,6 +30,10 @@
     box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.30);
 }
 
+.quienes-somos-button button:hover {
+    cursor: pointer;
+}
+
 .quienes-somos-button .chevron {
     margin: 0;
     width: 25px;
