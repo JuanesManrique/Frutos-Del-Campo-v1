@@ -1,6 +1,6 @@
 .quienes-somos {
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 40% 60%;
     max-width: 1080px;
     margin: auto;
     margin-top: 20px;
@@ -63,15 +63,15 @@
 
 .quienes-somos-info p{    
     font-size: 15px;
-    margin: 20px 0 20px;
 }
 
 .quienes-somos-info .buttons-container {
     display: flex;
+    margin-top:20px ;
 }
 
 .quienes-somos-info a{
-    margin: 20px 0 0 20px;
+    margin-left: 20px;
     padding: 10px 15px;
     display: flex;
     align-items: center;
@@ -83,15 +83,12 @@
     border: solid 1px var(--verde_claro);
     background-color: white;
     box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.30);
-}
-
-.quienes-somos-info a:active {
-    color: white;
-    background-color: var(--verde_claro);
+    transition: all 500ms;
 }
 
 .quienes-somos-info a:hover {
-    color: white;
+    color: #fff;
+    transition: none;
     background-color: var(--verde_claro);
 }
 
@@ -108,5 +105,5 @@
 }
 
 .quienes-somos img {
-    max-width: 80%;
+    max-width: 100%;
 }

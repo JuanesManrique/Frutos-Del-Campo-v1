@@ -25,13 +25,16 @@
     margin-top: 20px;
 }
 
+.inicio__info{
+    display: flex;
+}
+
 .info a{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
     color: #fff;
-    width: 200px;
     text-decoration: none;
     margin-top: 20px;
     padding: 10px 15px;
