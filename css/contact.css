@@ -70,3 +70,61 @@
 .contact-button {
     margin-right: 10px;
 }
+
+.footer {
+    height: 70px;
+    grid-column: span 1;
+}
+
+.footer__info{
+    display: flex;
+    margin: auto;
+    line-height: 2;
+    padding: 20px;
+    max-width: 1080px;
+    justify-content: space-between;
+}
+
+.footer__info a{
+    text-decoration: none;
+}
+
+.footer p{
+    font-weight: 200;
+    font-size: 14px;
+    color: #fff;
+}
+
+.marca{
+    font-weight: 200;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+}
+
+.marca img{
+    margin-left: 10px;
+    height: 25px;
+}
+
+.redes__sociales {
+    height: 20px;
+    display: flex;
+    align-content: center;
+}
+
+.redes__sociales a {
+    margin: 2px 0;
+}
+
+.redes__sociales p {
+    font-size: 14px;
+    line-height: 2;
+    color: rgb(255, 255, 255);
+}
+
+.redes__sociales svg {
+    width: 25px;
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+}
