@@ -50,12 +50,11 @@
     font-weight: 400;
     font-size: 60px;
     color: var(--verde_oscuro);
-/*     line-height: 4rem; */
+    line-height: 80px;
 }
 
 .politica-info p{    
     font-size: 15px;
-    margin-top: 20px;
 }
 
 .politica-info .buttons-container {
@@ -76,14 +75,11 @@
     border: solid 1px var(--verde_claro);
     background-color: white;
     box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.30);
-}
-
-.politica-info a:active {
-    color: white;
-    background-color: var(--verde_claro);
+    transition: all 500ms;
 }
 
 .politica-info a:hover {
+    transition: none;
     color: white;
     background-color: var(--verde_claro);
 }
@@ -98,9 +94,8 @@
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
 .politica-imges img {
-    max-width: 80%;
+    max-width: 100%;
 }
