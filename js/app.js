@@ -9,7 +9,7 @@ function closeModal() {
 
 // JS CARRUSEL SWIPER
 
-/* var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 10,
     centeredSlides: true,
@@ -17,4 +17,4 @@ function closeModal() {
     el: ".swiper-pagination",
     clickable: true,
     },
-}); */
+});
