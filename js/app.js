@@ -61,12 +61,12 @@ spaceBetween: 20,
 centeredSlides: true,
 });
 
-var swiper = new Swiper(".cambiar__logos", {
-slidesPerView: 4,
+var rotar = new Swiper(".cambiar__logos", {
+slidesPerView: 3,
 spaceBetween: 30,
 loop: true,
 autoplay: {
-delay: 2500,
+delay: 3000,
 disableOnInteraction: false,
 },
 });
