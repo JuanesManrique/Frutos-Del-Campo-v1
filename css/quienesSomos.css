@@ -89,13 +89,8 @@
 
 .quienes-somos-info a:hover {
     color: #fff;
-    transition: none;
+    
     background-color: var(--verde_claro);
-}
-
-.quienes-somos-info a:active{
-    background-color: var(--verde_claro);
-    color:#fff;
 }
 
 .quienes-somos svg {
@@ -112,4 +107,14 @@
 
 .quienes-somos img {
     max-width: 100%;
+}
+
+.botones__somos{
+    cursor: pointer
+}
+
+.quienes-somos-info a:visited{
+    background-color: var(--verde_claro);
+    transition: none;
+    color:#fff;
 }

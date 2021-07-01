@@ -106,22 +106,22 @@
                 <h2 class="titulo__partners">Nuestros aliados</h2>
                 <div class="partners-container">
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img :src="imagen[0]" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://es.logodownload.org/wp-content/uploads/2018/10/facebook-logo-11-1024x385.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://logodownload.org/wp-content/uploads/2014/07/adidas-logo-1.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c4f3.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625106852/img/LOGO_Mesa_de_trabajo_1_gsx3ac.png" class="logo__partners">
                     </a>
                 </div>
             </section>
@@ -129,8 +129,7 @@
     
             <section class="quienes-somos">
                 <div class="quienes-somos-imges">
-                    <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png"
-                        alt="Portada" />
+                    <img :src="imagen1[posicionActual]" alt="Portada" />
                 </div>
                 <div class="quienes-somos-container">
                     <div class="quienes-somos-button" v-on:click="atras1">
@@ -140,9 +139,9 @@
                         <h3><strong>{{titulo1[posicionActual]}}</strong></h3>
                         <p>{{textos1[posicionActual]}}</p>
                         <div class="buttons-container">               
-                            <a v-on:click="mostrarTexto1(0)">¿Quiénes somos?</a>
-                            <a  v-on:click="mostrarTexto1(1)">Visión</a>
-                            <a  v-on:click="mostrarTexto1(2)">Misión</a>
+                            <a v-on:click="mostrarTexto1(0)" style="cursor: pointer;" >¿Quiénes somos?</a>
+                            <a  v-on:click="mostrarTexto1(1)" style="cursor: pointer;">Visión</a>
+                            <a  v-on:click="mostrarTexto1(2)" style="cursor: pointer;">Misión</a>
                         </div>
                     </div>
                     <div class="quienes-somos-button" v-on:click="adelante1">
