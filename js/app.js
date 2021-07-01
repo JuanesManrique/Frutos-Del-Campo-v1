@@ -61,12 +61,3 @@ var swiper = new Swiper(".cambiar__logos", {
         disableOnInteraction: false,
     },
 });
-
-// JS PLAY MODAL
-
-/* function openModal() {
-    document.getElementById("modal").style.display = "grid"
-}
-function closeModal() {
-    document.getElementById("modal").style.display = "none"
-} */
