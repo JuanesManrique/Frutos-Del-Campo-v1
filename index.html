@@ -73,7 +73,8 @@
                         <strong>del campo CTA</strong>
                     </h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, dignissimos qui quisquam expedita maxime obcaecati consequuntur explicabo nobis totam doloribus vitae. Provident natus tempore, voluptates numquam explicabo id repellendus
-                        alias!</p>
+                        alias!
+                    </p>
                     <div class="inicio__info">
                         <a href="#contacto" class="boton__info">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -93,48 +94,81 @@
                 <h2 class="titulo__partners">Nuestros aliados</h2>
                 <div class="partners-container">
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://es.logodownload.org/wp-content/uploads/2018/10/facebook-logo-11-1024x385.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://logodownload.org/wp-content/uploads/2014/07/adidas-logo-1.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c4f3.png" class="logo__partners">
                     </a>
                     <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
-                    </a>
-                    <a href="#">
-                        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo__partners">
+                        <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625106852/img/LOGO_Mesa_de_trabajo_1_gsx3ac.png" class="logo__partners">
                     </a>
                 </div>
             </section>
 
+            <div class="swiper-container cambiar__logos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png" class="logo__partners">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://es.logodownload.org/wp-content/uploads/2018/10/facebook-logo-11-1024x385.png" class="logo__partners">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://logodownload.org/wp-content/uploads/2014/07/adidas-logo-1.png" class="logo__partners">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c4f3.png" class="logo__partners">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625106852/img/LOGO_Mesa_de_trabajo_1_gsx3ac.png" class="logo__partners">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
 
             <section class="quienes-somos">
                 <div class="quienes-somos-imges">
-                    <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png" alt="Portada" />
+                    <img :src="imagen1[posicionActual]" alt="Portada" />
                 </div>
                 <div class="quienes-somos-container">
                     <div class="quienes-somos-button" v-on:click="atras1">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>
                     </div>
                     <div class="quienes-somos-info">
-                        <h3><strong>{{titulo1[posicionActual]}}</strong></h3>
-                        <p>{{textos1[posicionActual]}}</p>
+                        <transition name="fade" mode="out-in">
+                            <div v-for="(text, index) in texts" v-if="posicionActual == index" :key="text.title">
+                                <h3><strong>{{ text.title }}</strong></h3>
+                                <p>{{ text.paragraph }}</p>
+                            </div>
+                        </transition>
                         <div class="buttons-container">
-                            <a v-on:click="mostrarTexto1(0)">¿Quiénes somos?</a>
-                            <a v-on:click="mostrarTexto1(1)">Visión</a>
-                            <a v-on:click="mostrarTexto1(2)">Misión</a>
+                            <a v-on:click="mostrarTexto1(0)" style="cursor: pointer; " :class="getClase(0)">¿Quiénes somos?</a>
+                            <a v-on:click="mostrarTexto1(1)" style="cursor: pointer;">Misión</a>
+                            <a v-on:click="mostrarTexto1(2)" style="cursor: pointer;">Visión</a>
                         </div>
                     </div>
                     <div class="quienes-somos-button" v-on:click="adelante1">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
                     </div>
                 </div>
+
+
             </section>
             <section class="politica">
                 <div class="politica-container">
@@ -201,6 +235,8 @@
                     <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png" alt="Portada" />
                 </div>
             </section>
+
+
             <section class="gallery">
                 <div class="video-container">
                     <div class="button-gallery">
@@ -260,6 +296,8 @@
                 </div>
             </section>
             <section>
+
+
                 <div class="contact-container">
                     <div class="grid-container">
                         <div class="left-container">

@@ -89,13 +89,8 @@
 
 .quienes-somos-info a:hover {
     color: #fff;
-    transition: none;
+    
     background-color: var(--verde_claro);
-}
-
-.quienes-somos-info a:active{
-    background-color: var(--verde_claro);
-    color:#fff;
 }
 
 .quienes-somos svg {
@@ -113,3 +108,25 @@
 .quienes-somos img {
     max-width: 100%;
 }
+
+.botones__somos{
+    cursor: pointer
+}
+
+.quienes-somos-info a:visited{
+    background-color: var(--verde_claro);
+    transition: none;
+    color:#fff;
+}
+
+.active-class important{
+    background: var(--verde_claro);
+    color: #fff;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: all .3s
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
