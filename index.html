@@ -100,7 +100,7 @@
                         alt="Portada" />
                 </div>
             </section>
-    
+
     
             <section class="partners">
                 <h2 class="titulo__partners">Nuestros aliados</h2>
@@ -125,6 +125,23 @@
                     </a>
                 </div>
             </section>
+
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>
     
     
             <section class="quienes-somos">
@@ -136,18 +153,24 @@
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>
                     </div>
                     <div class="quienes-somos-info">
-                        <h3><strong>{{titulo1[posicionActual]}}</strong></h3>
-                        <p>{{textos1[posicionActual]}}</p>
+                        <transition name="fade" mode="out-in">
+                            <div v-for="(text, index) in texts" v-if="posicionActual == index" :key="text.title">
+                                <h3><strong>{{ text.title }}</strong></h3>
+                                <p>{{ text.paragraph }}</p>
+                            </div>
+                    </transition>                       
                         <div class="buttons-container">               
-                            <a v-on:click="mostrarTexto1(0)" style="cursor: pointer;" >¿Quiénes somos?</a>
-                            <a  v-on:click="mostrarTexto1(1)" style="cursor: pointer;">Visión</a>
-                            <a  v-on:click="mostrarTexto1(2)" style="cursor: pointer;">Misión</a>
+                            <a v-on:click="mostrarTexto1(0)" style="cursor: pointer; "  :class="getClase(0)">¿Quiénes somos?</a>
+                            <a  v-on:click="mostrarTexto1(1)" style="cursor: pointer;">Misión</a>
+                            <a  v-on:click="mostrarTexto1(2)" style="cursor: pointer;">Visión</a>
                         </div>
                     </div>
                     <div class="quienes-somos-button" v-on:click="adelante1">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
                     </div>
                 </div>
+
+
             </section>
             <section class="politica">
                 <div class="politica-container">
