@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="./css/certificados.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/modal.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -133,19 +132,19 @@
                         alt="Portada" />
                 </div>
                 <div class="quienes-somos-container">
-                    <div class="quienes-somos-button">
+                    <div class="quienes-somos-button" v-on:click="atras1">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></button>
                     </div>
                     <div class="quienes-somos-info">
-                        <h3>{{titulo1[posicionActual]}}</h3>
+                        <h3><strong>{{titulo1[posicionActual]}}</strong></h3>
                         <p>{{textos1[posicionActual]}}</p>
                         <div class="buttons-container">               
                             <a v-on:click="mostrarTexto1(0)">¿Quiénes somos?</a>
-                            <a  v-on:click="mostrarTexto1(1)" href="#contacto" id="botonB">Visión</a>
-                            <a href="#contacto" id="botonC">Misión</a>
+                            <a  v-on:click="mostrarTexto1(1)">Visión</a>
+                            <a  v-on:click="mostrarTexto1(2)">Misión</a>
                         </div>
                     </div>
-                    <div class="quienes-somos-button">
+                    <div class="quienes-somos-button" v-on:click="adelante1">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
                     </div>
                 </div>

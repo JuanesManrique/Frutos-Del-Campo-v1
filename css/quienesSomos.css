@@ -93,6 +93,11 @@
     background-color: var(--verde_claro);
 }
 
+.quienes-somos-info a:active{
+    background-color: var(--verde_claro);
+    color:#fff;
+}
+
 .quienes-somos svg {
     color: #fff;
     width: 25px;
