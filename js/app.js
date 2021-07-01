@@ -59,7 +59,7 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".cambiar__logos", {
 spaceBetween: 30,
 centeredSlides: true,
 autoplay: {
