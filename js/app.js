@@ -1,3 +1,19 @@
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    centeredSlides: true,
+    });
+    
+    var rotar = new Swiper(".cambiar__logos", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
+    });
+
 const app = new Vue({
 el: "#app",
 data: {
@@ -55,21 +71,7 @@ getClase(posicion) {
 },
 });
 
-var swiper = new Swiper(".mySwiper", {
-slidesPerView: 3,
-spaceBetween: 20,
-centeredSlides: true,
-});
 
-var rotar = new Swiper(".cambiar__logos", {
-slidesPerView: 3,
-spaceBetween: 30,
-loop: true,
-autoplay: {
-delay: 3000,
-disableOnInteraction: false,
-},
-});
 
 // JS PLAY MODAL
 
