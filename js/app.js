@@ -25,8 +25,8 @@ const app = new Vue ({
 })
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    spaceBetween: 10,
+    slidesPerView: 3,
+    spaceBetween: 20,
     centeredSlides: true,
     pagination: {
     el: ".swiper-pagination",

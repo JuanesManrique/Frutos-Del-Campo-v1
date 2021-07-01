@@ -1,6 +1,6 @@
 .gallery {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     max-width: 1080px;
     margin: auto;
     margin-top: 20px;
