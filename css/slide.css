@@ -2,7 +2,7 @@
     margin: 0;
 } */
 
-.swiper-slide {
+.mySwiper .swiper-slide {
     width: 200px;
     height: 200px;
     text-align: center;
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;

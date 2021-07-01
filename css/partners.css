@@ -19,8 +19,7 @@
 .partners-container {
     width: 70%;
     height: 80px;
-    display: grid;
-    grid-template-columns: repeat(6,auto);
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -30,6 +29,7 @@
 
 .logo__partners{
     height: 25px;
+    object-fit: contain;
     margin: 0 20px;
     transform: scale(1);
     filter: grayscale(1);
@@ -41,34 +41,12 @@
     filter: none;
 }
 
-.swiper-container {
+.cambiar__logos .swiper-container {
 max-width: 1080px;
-height: 100%;
-}
-
-.swiper-slide {
-text-align: center;
-font-size: 18px;
-background: #fff;
-
-/* Center slide text vertically */
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
-}
-
-.swiper-slide img {
-display: block;
 width: 100%;
-height: 100%;
-object-fit: cover;
+height: 25px;
+}
+.cambiar__logos .swiper-slide {
+    display: flex;
+    justify-content: center;
 }
