@@ -1,14 +1,12 @@
-/* .swiper-container {
-    margin: 0;
-} */
+.mySwiper.swiper-container {
+    width: 600px;
+    height: 350px;
+}
 
 .mySwiper .swiper-slide {
-    width: 200px;
-    height: 200px;
     text-align: center;
     font-size: 18px;
     background: #fff;
-
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -22,11 +20,4 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-}
-
-.mySwiper .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
