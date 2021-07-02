@@ -54,11 +54,8 @@ getClase(posicion) {
 },
 });
 
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
-    centeredSlides: true,
-    loop: true,
-});
+
+
     var rotar = new Swiper(".cambiar__logos", {
     slidesPerView: 3,
     spaceBetween: 30,
