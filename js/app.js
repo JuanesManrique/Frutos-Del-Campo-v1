@@ -44,11 +44,10 @@ adelante1: function () {
     this.posicionActual++;
     }
 },
-cambiarImagen: function () {},
 
 getClase(posicion) {
     if (posicion === this.posicionActual) {
-    return "active-class";
+    return "activado";
     }
     return "";
 },

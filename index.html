@@ -143,8 +143,8 @@
                         </transition>
                         <div class="buttons-container">
                             <a v-on:click="mostrarTexto1(0)" style="cursor: pointer; " :class="getClase(0)">¿Quiénes somos?</a>
-                            <a v-on:click="mostrarTexto1(1)" style="cursor: pointer;">Misión</a>
-                            <a v-on:click="mostrarTexto1(2)" style="cursor: pointer;">Visión</a>
+                            <a v-on:click="mostrarTexto1(1)" style="cursor: pointer;" :class="getClase(1)">Misión</a>
+                            <a v-on:click="mostrarTexto1(2)" style="cursor: pointer;" :class="getClase(2)">Visión</a>
                         </div>
                     </div>
                     <div class="quienes-somos-button" v-on:click="adelante1">
