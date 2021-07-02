@@ -55,6 +55,14 @@
     border-radius: 10px;
 }
 
+.video-before {
+    width: 160px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .video__item {
     width: 140px;
     height: 300px;
