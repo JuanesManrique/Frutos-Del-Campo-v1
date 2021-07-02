@@ -58,7 +58,7 @@
 
 .quienes-somos-info h3{
     font-weight: 400;
-    font-size: 40px;
+    font-size: 45px;
     color: var(--verde_oscuro);
 }
 
@@ -119,9 +119,9 @@
     color:#fff;
 }
 
-.active-class important{
-    background: var(--verde_claro);
-    color: #fff;
+.activado {
+    background: var(--verde_claro) !important;
+    color: #fff !important;
 }
 
 .fade-enter-active, .fade-leave-active {
