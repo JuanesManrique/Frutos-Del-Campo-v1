@@ -54,17 +54,23 @@ getClase(posicion) {
 },
 });
 
+var rotar = new Swiper(".cambiar__logos", {
+slidesPerView: 3,
+spaceBetween: 30,
+loop: true,
+autoplay: {
+delay: 3000,
+disableOnInteraction: false,
+},
+});
 
-
-    var rotar = new Swiper(".cambiar__logos", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-    },
-    });
+var swiper = new Swiper(".imagenes", {
+autoplay: {
+disableOnInteraction: false,
+delay: 2500,
+loop:true,
+},
+});
 
 // JS PLAY MODAL
 
