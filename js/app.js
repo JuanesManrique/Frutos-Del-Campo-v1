@@ -65,10 +65,10 @@ disableOnInteraction: false,
 });
 
 var swiper = new Swiper(".imagenes", {
+loop:true,
 autoplay: {
 disableOnInteraction: false,
 delay: 2500,
-loop:true,
 },
 });
 
