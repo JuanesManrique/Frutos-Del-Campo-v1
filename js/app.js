@@ -68,7 +68,10 @@ var swiper = new Swiper(".imagenes", {
 loop:true,
 autoplay: {
 disableOnInteraction: false,
-delay: 2500,
+delay: 10000,
+},navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
 },
 });
 
