@@ -50,6 +50,7 @@
 
 .portada {
     padding: 20px;
+    align-self: center;
 }
 
 .portada img {
