@@ -67,6 +67,21 @@ header{
     list-style: none;
 }
 
+.menu__movil svg{
+    width: 0px;
+    color: black;
+}
+
+
+@media (max-width:1000px){
+    .nav{
+        display: none;
+    }
+    .menu__movil svg{
+        width: 30px;
+    }
+}
+
 
 
 

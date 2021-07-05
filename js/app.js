@@ -56,12 +56,23 @@ getClase(posicion) {
 
 var rotar = new Swiper(".cambiar__logos", {
 slidesPerView: 3,
-spaceBetween: 30,
+spaceBetween: 5,
 loop: true,
 autoplay: {
 delay: 3000,
 disableOnInteraction: false,
 },
+
+// breakpoints:{
+//     800:{
+//         slidesPerView: 3
+//     },
+
+//     320:{
+//         slidesPerView: 1
+//     }
+// }
+
 });
 
 var swiper = new Swiper(".imagenes", {
