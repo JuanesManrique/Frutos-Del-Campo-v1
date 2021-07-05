@@ -75,6 +75,10 @@ delay: 10000,
 },
 });
 
+
+
+
+
 // JS PLAY MODAL
 
 /* function openModal() {
