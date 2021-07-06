@@ -55,23 +55,26 @@ getClase(posicion) {
 });
 
 var rotar = new Swiper(".cambiar__logos", {
-slidesPerView: 3,
-spaceBetween: 5,
+slidesPerView: 4,
 loop: true,
 autoplay: {
 delay: 3000,
 disableOnInteraction: false,
 },
 
-// breakpoints:{
-//     800:{
-//         slidesPerView: 3
-//     },
+breakpoints:{
+    320:{
+        slidesPerView: 1
+    },
 
-//     320:{
-//         slidesPerView: 1
-//     }
-// }
+    599:{
+        slidesPerView: 2
+    },
+
+    768:{
+        slidesPerView: 3
+    }
+}
 
 });
 

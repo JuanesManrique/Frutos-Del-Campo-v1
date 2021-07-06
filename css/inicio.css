@@ -56,3 +56,55 @@
 .portada img {
     max-width: 100%;
 }
+
+
+@media (max-width:1025px){
+    .inicio{
+        margin-top: 10px;
+    }
+
+    .info h1{
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+}
+
+@media(max-width:768px){
+    .inicio{
+        grid-template-columns: 100%;
+    }
+
+    .info {
+        order: 1;
+        align-items: center;
+    }
+
+    .info h1{
+        text-align: center;
+    }
+
+    .info p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .info a{
+        padding: 10px 60px;
+    }
+
+    .portada{
+        order: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portada img{
+        max-width: 80%;
+    }
+
+    .inicio__info{
+    padding: 20px;
+    margin: auto;
+    }
+}
