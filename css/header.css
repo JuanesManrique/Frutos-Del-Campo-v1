@@ -73,7 +73,7 @@ header{
 }
 
 
-@media (max-width:1000px){
+@media (max-width:1023px){
     .nav{
         display: none;
     }
