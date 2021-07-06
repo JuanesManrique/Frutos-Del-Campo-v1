@@ -53,3 +53,13 @@ height: 25px;
     justify-content: center;
 }
 
+
+@media(max-width:895px){
+    .partners{
+        top: 0;
+    }
+
+    .partners-container{
+        box-shadow: none;
+    }
+}
