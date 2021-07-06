@@ -47,15 +47,18 @@
                     <p>Orgullosamente <br><strong>Colombianos</strong></p>
                 </div>
             </a>
-            <ul :class="menu" >
 
+
+            <ul :class="menu" >
                 <div class="salir" v-on:click="toggleCollapsed">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
                     </svg>
                 </div>
 
-                <div class="idioma"><strong>ES</strong>
+                <p class="op">Cambia tu idioma</p>
+                <div class="idioma">
+                    <strong>ES</strong>
                     <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624397454/img/colombia_muoy2a.png"
                         alt="español" class="bandera">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"

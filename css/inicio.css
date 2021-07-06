@@ -70,7 +70,7 @@
 
 }
 
-@media(max-width:768px){
+@media(max-width:895px){
     .inicio{
         grid-template-columns: 100%;
     }
@@ -82,15 +82,13 @@
 
     .info h1{
         text-align: center;
+        font-size: 60px;
     }
 
     .info p {
         text-align: center;
         font-size: 14px;
-    }
-
-    .info a{
-        padding: 10px 60px;
+        padding: 0 40px ;
     }
 
     .portada{
@@ -100,7 +98,7 @@
     }
 
     .portada img{
-        max-width: 80%;
+        max-width: 70%;
     }
 
     .inicio__info{
