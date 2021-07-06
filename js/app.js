@@ -10,6 +10,7 @@ imagen1: [
     "https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png",
 ],
 posicionActual: 0,
+isCollapsed: true,
 texts: [
     {
     title: "¿Quiénes somos?",
@@ -27,7 +28,11 @@ texts: [
         "Para el 2023 ser una cooperativa líder en producción, transformación, distribución de frutas y verduras a nivel mundial mediante nuevos desarrollos tecnológicos, una cultura innovadora comprometida con la excelencia, la sostenibilidad  y respeto por el medio ambiente.",
     },
 ],
+
+
+
 },
+
 methods: {
 mostrarTexto1: function (posicion) {
     this.posicionActual = posicion;
@@ -51,7 +56,23 @@ getClase(posicion) {
     }
     return "";
 },
+
+toggleCollapsed(){
+    this.isCollapsed = !this.isCollapsed
 },
+
+
+
+},
+
+computed:{
+    menu(){
+        if(this.isCollapsed){
+            return "nav collapsed"
+        }return "nav"
+    },
+}
+
 });
 
 var rotar = new Swiper(".cambiar__logos", {

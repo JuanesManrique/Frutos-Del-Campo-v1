@@ -36,6 +36,7 @@ header{
     display: flex;
     font-size: 14px;
     margin: 0 0 0 15px;
+    align-items: center;
 }
 
 .idioma svg{
@@ -72,14 +73,42 @@ header{
     color: black;
 }
 
+.salir svg{
+    display: none;
+}
+
 
 @media (max-width:1025px){
     .nav{
-        display: none;
+        background-color: white;
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 250px;
+        flex-direction: column;
+        z-index: 99;
+        transition: right .3s;
     }
+
+    .collapsed{
+        right: -100%;
+    }
+
+
     .menu__movil svg{
         width: 30px;
     }
+
+    .salir svg{
+        display: block;
+        width: 25px;
+        height: 25px;
+        transition: all 1s;
+    }
+
+
+
 }
 
 
