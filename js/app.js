@@ -10,6 +10,7 @@ imagen1: [
     "https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png",
 ],
 posicionActual: 0,
+isCollapsed: true,
 texts: [
     {
     title: "¿Quiénes somos?",
@@ -27,7 +28,11 @@ texts: [
         "Para el 2023 ser una cooperativa líder en producción, transformación, distribución de frutas y verduras a nivel mundial mediante nuevos desarrollos tecnológicos, una cultura innovadora comprometida con la excelencia, la sostenibilidad  y respeto por el medio ambiente.",
     },
 ],
+
+
+
 },
+
 methods: {
 mostrarTexto1: function (posicion) {
     this.posicionActual = posicion;
@@ -36,12 +41,16 @@ mostrarTexto1: function (posicion) {
 atras1: function () {
     if (this.posicionActual > 0) {
     this.posicionActual--;
+    } else{
+        this.posicionActual = this.texts.length - 1
     }
 },
 
 adelante1: function () {
     if (this.posicionActual < this.texts.length - 1) {
     this.posicionActual++;
+    } else {
+        this.posicionActual = 0
     }
 },
 
@@ -51,20 +60,74 @@ getClase(posicion) {
     }
     return "";
 },
+
+toggleCollapsed(){
+    this.isCollapsed = !this.isCollapsed
+},
+
+animation(){
+    window.scroll({
+        top:0,
+        left:0,
+        behavior: 'smooth'
+    })
+}
+},
+
+computed:{
+    menu(){
+        if(this.isCollapsed){
+            return "nav collapsed"
+        }return "nav"
+    },
+}
+
+});
+
+var rotar = new Swiper(".cambiar__logos", {
+slidesPerView: 4,
+loop: true,
+autoplay: {
+delay: 3000,
+disableOnInteraction: false,
+},
+
+breakpoints:{
+    320:{
+        slidesPerView: 1
+    },
+
+    599:{
+        slidesPerView: 2
+    },
+
+    768:{
+        slidesPerView: 3
+    }
+}
+
+});
+
+var swiper = new Swiper(".imagenes", {
+loop:true,
+autoplay: {
+disableOnInteraction: false,
+delay: 10000,
+},navigation: {
+    nextEl: ".next",
+    prevEl: ".prev",
 },
 });
 
+window.onscroll = function (){
+    if(document.documentElement.scrollTop >= 100){
+        document.querySelector(".arriba") .classList.add('show')
+    } else{
+        document.querySelector(".arriba") .classList.remove('show')
+    }
+}
 
 
-    var rotar = new Swiper(".cambiar__logos", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-    },
-    });
 
 // JS PLAY MODAL
 

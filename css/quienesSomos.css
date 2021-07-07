@@ -125,8 +125,34 @@
 }
 
 .fade-enter-active, .fade-leave-active {
-    transition: all .3s
-  }
+    transition: all 300ms
+}
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
-  }
+}
+
+
+@media (max-width:895px) {
+    
+    .quienes-somos{
+        grid-template-columns: 100%;
+    }
+
+    .quienes-somos-imges{
+        justify-content: center;
+    }
+
+    .quienes-somos-info{
+        text-align: center;
+        align-items: center;
+    }
+
+    .quienes-somos-container{
+        padding: 20px 50px;
+    }
+
+    .quienes-somos img {
+        max-width: 70%;
+    }
+
+}
