@@ -37,7 +37,7 @@
 
 <body>
     <div id="app">
-        <header>
+        <header id="head">
             <a href="#" class="izquierda">
                 <div class="logo">
                     <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624395247/img/logo_befaif.png"
@@ -49,10 +49,12 @@
             </a>
 
 
-            <ul :class="menu" >
+            <ul :class="menu">
                 <div class="salir" v-on:click="toggleCollapsed">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11 17l-5-5m0 0l5-5m-5 5h12" />
                     </svg>
                 </div>
 
@@ -68,32 +70,36 @@
                 </div>
 
 
-                <a href="#inicio">
+                <a href="#inicio" v-on:click="toggleCollapsed">
                     <li>Inicio</li>
                 </a>
-                <a href="https://swiperjs.com/demos">
+                <a href="#quienes" v-on:click="toggleCollapsed">
                     <li>Quiénes somos</li>
                 </a>
-                <a href="https://swiperjs.com/demos">
+                <a href="#poli" class="politi" v-on:click="toggleCollapsed">
+                    <li>Politica y calidad</li>
+                </a>
+                <a href="#expor" v-on:click="toggleCollapsed">
                     <li>Exportación</li>
                 </a>
-                <a href="https://swiperjs.com/demos">
+                <a href="https://swiperjs.com/demos" v-on:click="toggleCollapsed">
                     <li>Certificados</li>
                 </a>
-                <a href="https://swiperjs.com/demos">
+                <a href="https://swiperjs.com/demos" v-on:click="toggleCollapsed">
                     <li>Galería</li>
                 </a>
-                <a href="https://swiperjs.com/demos">
+                <a href="https://swiperjs.com/demos" v-on:click="toggleCollapsed">
                     <li>Contacto</li>
                 </a>
             </ul>
             <div class="menu__movil" v-on:click="toggleCollapsed">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </div>
 
-            
+
 
         </header>
         <main>
@@ -117,7 +123,7 @@
                             </svg> Contáctanos
                         </a>
                     </div>
-                    < </div> <div class="portada">
+                    </div> <div class="portada__i">
                         <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png"
                             alt="Portada" />
                 </div>
@@ -165,7 +171,7 @@
             </section>
 
 
-            <section class="quienes-somos">
+            <section class="quienes-somos" id="quienes">
                 <div class="quienes-somos-imges">
                     <transition name="fade" mode="out-in">
                         <img :src="imagen1[posicionActual]" alt="Portada" :key="posicionActual" />
@@ -204,7 +210,9 @@
 
 
             </section>
-            <section class="politica">
+
+
+            <section class="politica" id="poli">
                 <div class="politica-container">
                     <div class="politica-button">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -241,7 +249,7 @@
             </section>
 
 
-            <section class="exportacion">
+            <section class="exportacion" id="expor">
                 <div class="exportacion-imges">
                     <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624923597/img/papaya-01_xzi3rs.png"
                         alt="Portada" />
@@ -301,6 +309,8 @@
                         alt="Portada" />
                 </div>
             </section>
+
+
 
             <section class="galery">
                 <div class="swiper-container imagenes">
@@ -384,6 +394,14 @@
                     </div>
                 </div>
             </section>
+
+            <a class="arriba" v-on:click="animation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                </svg>
+            </a>
+
         </main>
     </div>
 

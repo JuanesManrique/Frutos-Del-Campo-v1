@@ -48,12 +48,12 @@
     margin-right: 10px;
 }
 
-.portada {
+.portada__i {
     padding: 20px;
     align-self: center;
 }
 
-.portada img {
+.portada__i img {
     max-width: 100%;
 }
 
@@ -97,19 +97,19 @@
         margin-top: 0;
     }
 
-    .portada{
+    .portada__i{
         order: 0;
         display: flex;
         justify-content: center;
     }
 
-    .portada img{
+    .portada__i img{
         max-width: 70%;
     }
 
     .inicio__info{
-    padding: 20px;
     margin: auto;
+    margin-top: 20px;
     }
 
 }

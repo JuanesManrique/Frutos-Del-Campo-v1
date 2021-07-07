@@ -41,12 +41,16 @@ mostrarTexto1: function (posicion) {
 atras1: function () {
     if (this.posicionActual > 0) {
     this.posicionActual--;
+    } else{
+        this.posicionActual = this.texts.length - 1
     }
 },
 
 adelante1: function () {
     if (this.posicionActual < this.texts.length - 1) {
     this.posicionActual++;
+    } else {
+        this.posicionActual = 0
     }
 },
 
@@ -61,8 +65,13 @@ toggleCollapsed(){
     this.isCollapsed = !this.isCollapsed
 },
 
-
-
+animation(){
+    window.scroll({
+        top:0,
+        left:0,
+        behavior: 'smooth'
+    })
+}
 },
 
 computed:{
@@ -110,7 +119,13 @@ delay: 10000,
 },
 });
 
-
+window.onscroll = function (){
+    if(document.documentElement.scrollTop >= 100){
+        document.querySelector(".arriba") .classList.add('show')
+    } else{
+        document.querySelector(".arriba") .classList.remove('show')
+    }
+}
 
 
 

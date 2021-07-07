@@ -57,6 +57,7 @@ height: 25px;
 @media(max-width:895px){
     .partners{
         top: 0;
+        margin-top: 20px;
     }
 
     .partners-container{
