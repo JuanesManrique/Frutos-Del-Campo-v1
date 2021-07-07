@@ -78,6 +78,7 @@
     .info {
         order: 1;
         align-items: center;
+        padding: 20px 50px;
     }
 
     .info h1{

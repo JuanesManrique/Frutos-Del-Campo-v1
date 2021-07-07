@@ -99,3 +99,33 @@
 .politica-imges img {
     max-width: 100%;
 }
+
+@media (max-width:895px) {
+
+    .politica{
+        grid-template-columns: 100%
+    }
+
+    .politica-imges{
+        justify-content: center;
+        order: 0;
+    }
+
+    .politica-container{
+        order: 1;
+        padding: 20px 50px;
+    }
+
+    .politica-imges img{
+        width: 70%;
+    }
+
+    .politica-info{
+        text-align: center;
+    }
+
+    .buttons-container{
+        justify-content: center;
+    }
+    
+}
