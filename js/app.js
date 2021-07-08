@@ -72,13 +72,9 @@ const app = new Vue({
         },
 
 
-        cerrarModal:function() {
-            this.cambiomodal = false;
+        toggleModal:function() {
+            this.cambiomodal = !this.cambiomodal
         },
-
-        abrirModal:function(){
-            this.cambiomodal = true
-        }
     },
 
     computed: {
