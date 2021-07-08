@@ -96,6 +96,19 @@
     color: white;
 }
 
+.info-gallery {
+    text-align: right;
+}
+
+.info-gallery h2 {
+    font-size: 40px;
+    color: var(--verde_oscuro);
+}
+
+.info-gallery p {
+    font-size: 15px;
+}
+
 .tamano {
     width: 100%;
     height: 100%;

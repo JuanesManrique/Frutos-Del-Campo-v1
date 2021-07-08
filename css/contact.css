@@ -1,7 +1,7 @@
 .contact-container {
-    padding-top: 100px ;
+    padding-top: 100px;
     height: 560px;
-    background-image: url(https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624399332/img/fondo_verde_ai13jz.svg);
+    background-color: var(--verde_claro);
     background-repeat: no-repeat;
     background-size: 100vw;
     display: grid;
@@ -25,17 +25,17 @@
     justify-content: center;
 }
 
-.right-container h1{
+.right-container h1 {
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-.right-container p{
+.right-container p {
     font-size: 16px;
     font-weight: 300;
 }
 
-.right-container a{
+.right-container a {
     font-size: 16px;
     font-weight: 300;
     text-decoration: none;
@@ -48,7 +48,7 @@
     align-items: center;
 }
 
-.mapa{
+.mapa {
     padding: 10px;
     width: 100%;
     height: 300px;
@@ -76,7 +76,7 @@
     grid-column: span 1;
 }
 
-.footer__info{
+.footer__info {
     display: flex;
     margin: auto;
     line-height: 2;
@@ -85,24 +85,24 @@
     justify-content: space-between;
 }
 
-.footer__info a{
+.footer__info a {
     text-decoration: none;
 }
 
-.footer p{
+.footer p {
     font-weight: 200;
     font-size: 14px;
     color: #fff;
 }
 
-.marca{
+.marca {
     font-weight: 200;
     color: #fff;
     font-size: 14px;
     display: flex;
 }
 
-.marca img{
+.marca img {
     margin-left: 10px;
     height: 25px;
 }
