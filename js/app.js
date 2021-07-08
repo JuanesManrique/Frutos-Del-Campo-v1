@@ -85,8 +85,6 @@ const app = new Vue({
             }
             return "nav"
         },
-
-
     }
 
 });
