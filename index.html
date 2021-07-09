@@ -255,7 +255,7 @@
 
             <section class="certificate">
                 <div class="certificate__container">
-                    <div class="certificate-button">
+                    <div class="certificate-button" v-on:click="atras3">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -265,18 +265,20 @@
                     <div class="certificate-info">
                         <h3>Certificados</h3>
                         <h2><strong>Registro ICA</strong></h2>
-                        <h4>No. 505730167</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore nihil unde sed blanditiis consequatur incidunt pariatur? Consectetur reiciendis odit tempora quidem! Aperiam saepe hic voluptas sit necessitatibus, debitis
-                            fugiat.
-                        </p>
-                        <a :href="certificadoDescargas[posicionActual3]" target="bank" class="boton__info">Descargar certificado<svg class="w-6 h-6" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
-                            </svg>
-                        </a>
+                        <transition name="fade" mode="out-in">
+                            <div v-for="(certificadoDescarga, index) in certificadoDescargas" v-if="posicionActual3 == index" :key="certificadoDescarga.title">
+                                <h4>{{ certificadoDescarga.title }}</h4>
+                                <p>{{ certificadoDescarga.paragraph }}</p>
+                                <a :href="certificadoDescarga.file" target="bank" class="boton__info">Descargar certificado<svg class="w-6 h-6" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                                </svg>
+                            </a>
+                            </div>
+                        </transition>
                     </div>
-                    <div class="certificate-button">
+                    <div class="certificate-button" v-on:click="adelante3">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
@@ -314,7 +316,7 @@
 
             <section class="gallery">
                 <div class="gallery-container">
-                    <div class="prev button-gallery">
+                    <div class="prev button-gallery" v-on:click="atras4">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"d="M15 19l-7-7 7-7"></path></svg></button>
                     </div>
                     <div class="swiper-container imagenes">
@@ -322,32 +324,39 @@
 
                             <div class="swiper-slide video-item" v-on:click="toggleModal">
                                 <img src="https://www.tuexperto.com/wp-content/uploads/2017/10/fondo-de-pantalla-paisaje.jpg" alt="" class="tamano">
-                                <button class=" play-button"><svg class="play-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"> </path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg></button>
+                                <button class=" play-button"><svg xmlns="http://www.w3.org/2000/svg" class="play-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                  </svg></button>
                             </div>
 
                             <div class="swiper-slide video-item" v-on:click="toggleModal">
                                 <img src="https://www.tuexperto.com/wp-content/uploads/2017/10/fondo-de-pantalla-paisaje.jpg" class="tamano">
-                                <button class=" play-button"><svg class="play-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" > <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"> </path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg></button>
+                                <button class=" play-button"><svg xmlns="http://www.w3.org/2000/svg" class="play-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                  </svg></button>
                             </div>
 
                             <div class="swiper-slide video-item" v-on:click="toggleModal">
                                 <img src="https://www.tuexperto.com/wp-content/uploads/2017/10/fondo-de-pantalla-paisaje.jpg" class="tamano">
-                                <button class=" play-button"><svg class="play-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" > <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"> </path> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg></button>
+                                <button class=" play-button"><svg xmlns="http://www.w3.org/2000/svg" class="play-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+                                  </svg></button>
                             </div>
 
                         </div>
                     </div>
 
-                    <div class="next button-gallery">
+                    <div class="next button-gallery" v-on:click="adelante4">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></button>
                     </div>
                 </div>
                 <div class="info-gallery">
-                    <h2>Titulo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia id fuga alias pariatur! Ullam fugiat ea, dolores quia odio enim mollitia asperiores laborum fugit velit quisquam eligendi, unde aliquam. Odio?</p>
+                    <transition name="fade" mode="out-in">
+                        <div v-for="(text4, index) in texts4" v-if="posicionActual4 == index" :key="text4.title">
+                            <h2><strong>{{ text4.title }}</strong></h2>
+                            <p>{{ text4.paragraph }}</p>
+                        </div>
+                    </transition>
                 </div>
             </section>
 

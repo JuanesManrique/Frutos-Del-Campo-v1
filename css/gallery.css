@@ -91,7 +91,6 @@
     align-items: center;
     border: none;
     border-radius: 50%;
-    background-color: var(--verde_claro);
 }
 
 .play-button:hover {
@@ -101,7 +100,7 @@
 
 .play-icon {
     width: 100%;
-    color: white;
+    color: var(--verde_claro);
 }
 
 .info-gallery {
