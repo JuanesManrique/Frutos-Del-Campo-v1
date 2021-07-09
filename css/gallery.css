@@ -52,6 +52,14 @@
     align-items: center;
 }
 
+.prev {
+    padding-right: 20px;
+}
+
+.next {
+    padding-left: 20px;
+}
+
 .button-gallery button {
     width: 42px;
     height: 42px;
@@ -98,6 +106,10 @@
 
 .info-gallery {
     text-align: right;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info-gallery h2 {

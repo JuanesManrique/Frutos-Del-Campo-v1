@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/Calidad.css" />
     <link rel="stylesheet" href="./css/exportacion.css" />
     <link rel="stylesheet" href="./css/certificados.css" />
+    <link rel="stylesheet" href="./css/certigallery.css" />
     <link rel="stylesheet" href="./css/gallery.css" />
     <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="./css/modal.css" />
@@ -213,8 +214,9 @@
                             Los empaques, presentaciones y la variedad de las especies a exportar.
                         </p>
                         <div class="buttons-container">
+                            <a href="#" class="boton__info">Planta Empacadora</a>
+                            <a href="#" class="boton__info">Cultivo</a>
                             <a href="#" class="boton__info">Calidad</a>
-                            <a href="#" class="boton__info">Politica</a>
                         </div>
                     </div>
                     <div class="calidad-button">
@@ -262,11 +264,13 @@
                             </svg></button>
                     </div>
                     <div class="certificate-info">
-                        <h3>Nuestros</h3>
-                        <h2><strong>Certificados</strong></h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, dignissimos qui quisquam expedita maxime obcaecati consequuntur explicabo nobis totam doloribus vitae. Provident natus tempore,voluptates numquam explicabo id
-                            repellendus alias!</p>
-                        <a href="#contacto" class="boton__info">Descargar certificado<svg class="w-6 h-6" fill="none"
+                        <h3>Certificados</h3>
+                        <h2><strong>Registro ICA</strong></h2>
+                        <h4>No. 505730167</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempore nihil unde sed blanditiis consequatur incidunt pariatur? Consectetur reiciendis odit tempora quidem! Aperiam saepe hic voluptas sit necessitatibus, debitis
+                            fugiat.
+                        </p>
+                        <a :href="certificadoDescargas[posicionActual3]" target="bank" class="boton__info">Descargar certificado<svg class="w-6 h-6" fill="none"
                                 stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
@@ -282,7 +286,28 @@
                     </div>
                 </div>
                 <div class="certificate-imges">
-                    <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png" alt="Portada" />
+                    <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625800272/img/Instituto-Colombiano-Agropecuario-removebg-preview_bcbacm.png" alt="Portada" />
+                </div>
+            </section>
+
+
+            <section class="certigallery">
+                <div class="title-container">
+                    <h2 class="certigallery-title">Certificaciones en proceso</h2>
+                </div>
+                <div class="container-certigallery">
+                    <div class="container-img">
+                        <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625798500/img/logo-grasp-1024x427-1024x427_l8f5ji.png" alt="logo del certificado">
+                    </div>
+                    <div class="container-img">
+                        <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625798476/img/rainforest-alliance-logo_z5lhco.png" alt="logo del certificado">
+                    </div>
+                    <div class="container-img">
+                        <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625798471/img/Imagen1_qtqswq.png" alt="logo del certificado">
+                    </div>
+                    <div class="container-img">
+                        <img src="https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1625798471/img/Imagen1_qtqswq.png" alt="logo del certificado">
+                    </div>
                 </div>
             </section>
 
