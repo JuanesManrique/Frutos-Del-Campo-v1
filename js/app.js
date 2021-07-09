@@ -9,7 +9,11 @@ const app = new Vue({
             "https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624923597/img/papaya-01_xzi3rs.png",
             "https://res.cloudinary.com/desarrollofrutosdelcampo/image/upload/v1624396770/img/portada_web_2_lw3pus.png",
         ],
+        certificadoDescargas: [
+
+        ],
         posicionActual: 0,
+        posicionActual3: 0,
         isCollapsed: true,
         isOpen: true,
         cambiomodal: false,
@@ -34,6 +38,10 @@ const app = new Vue({
     methods: {
         mostrarTexto1: function(posicion) {
             this.posicionActual = posicion;
+        },
+
+        mostrarTexto3: function(posicion3) {
+            this.posicionActual3 = posicion3;
         },
 
         atras1: function() {
@@ -72,7 +80,7 @@ const app = new Vue({
         },
 
 
-        toggleModal:function() {
+        toggleModal: function() {
             this.cambiomodal = !this.cambiomodal
         },
     },
@@ -85,8 +93,8 @@ const app = new Vue({
             return "nav"
         },
 
-        modal(){
-            if(this.cambiomodal){
+        modal() {
+            if (this.cambiomodal) {
                 return "modalAbierta"
             }
             return "modalCerrada"
