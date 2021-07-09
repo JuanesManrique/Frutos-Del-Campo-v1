@@ -47,8 +47,7 @@
 }
 
 .calidad-info h2 {
-    font-weight: 400;
-    font-size: 60px;
+    font-size: 45px;
     color: var(--verde_oscuro);
     line-height: 80px;
 }

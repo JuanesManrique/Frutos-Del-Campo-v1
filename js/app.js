@@ -13,6 +13,7 @@ const app = new Vue({
 
         ],
         posicionActual: 0,
+        posicionActual2: 0,
         posicionActual3: 0,
         isCollapsed: true,
         isOpen: true,
@@ -31,6 +32,20 @@ const app = new Vue({
             },
         ],
 
+        texts2: [{
+                title: "Planta empacadora",
+                paragraph: "Frutos del Campo, es una cooperativa de trabajo asociado, constituida en el año 2018 en el municipio de Villavicencio, Departamento del Meta (Colombia). Formada por un grupo de agricultores e ingenieros con más de 15 años de experiencia demostrable en la siembra distribución y comercialización de frutas a nivel nacional e internacional.",
+            },
+            {
+                title: "Cultivo",
+                paragraph: "Frutos del Campo  dirige sus esfuerzos a comercializar  internacionalmente frutas y vegetales en fresco desde Colombia, para satisfacer las necesidades de consumidores y apoyando a los Productores agrícolas en la comercialización y tecnificación de cultivos.",
+            },
+            {
+                title: "Calidad",
+                paragraph: "En Frutos del Campo estamos comprometidos como equipo con la Calidad Integral en: El manejo y la producción de nuestros proveedores. Los procesos de Cosecha, Pos cosecha, Logística y Suministros. Los empaques, presentaciones y la variedad de las especies a exportar.",
+            },
+        ],
+
 
 
     },
@@ -38,6 +53,10 @@ const app = new Vue({
     methods: {
         mostrarTexto1: function(posicion) {
             this.posicionActual = posicion;
+        },
+
+        mostrarTexto2: function(posicion2) {
+            this.posicionActual2 = posicion2;
         },
 
         mostrarTexto3: function(posicion3) {
@@ -62,6 +81,29 @@ const app = new Vue({
 
         getClase(posicion) {
             if (posicion === this.posicionActual) {
+                return "activado";
+            }
+            return "";
+        },
+
+        atras2: function() {
+            if (this.posicionActual2 > 0) {
+                this.posicionActual2--;
+            } else {
+                this.posicionActual2 = this.texts.length - 1
+            }
+        },
+
+        adelante2: function() {
+            if (this.posicionActual2 < this.texts.length - 1) {
+                this.posicionActual2++;
+            } else {
+                this.posicionActual2 = 0
+            }
+        },
+
+        getClase2(posicion2) {
+            if (posicion2 === this.posicionActual2) {
                 return "activado";
             }
             return "";

@@ -198,7 +198,7 @@
 
             <section class="calidad" id="poli">
                 <div class="calidad-container">
-                    <div class="calidad-button">
+                    <div class="calidad-button" v-on:click="atras2">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -206,20 +206,19 @@
                             </svg></button>
                     </div>
                     <div class="calidad-info">
-                        <h2><strong>Calidad</strong></h2>
-                        <p>En Frutos del Campo estamos comprometidos como equipo con la Calidad Integral en:</br>
-                            </br>
-                            El manejo y la producción de nuestros proveedores.</br>
-                            Los procesos de Cosecha, Pos cosecha, Logística y Suministros.</br>
-                            Los empaques, presentaciones y la variedad de las especies a exportar.
-                        </p>
+                        <transition name="fade" mode="out-in">
+                            <div v-for="(text2, index) in texts2" v-if="posicionActual2 == index" :key="text2.title">
+                                <h2><strong>{{ text2.title }}</strong></h2>
+                                <p>{{ text2.paragraph }}</p>
+                            </div>
+                        </transition>
                         <div class="buttons-container">
-                            <a href="#" class="boton__info">Planta Empacadora</a>
-                            <a href="#" class="boton__info">Cultivo</a>
-                            <a href="#" class="boton__info">Calidad</a>
+                            <a v-on:click="mostrarTexto2(0)" style="cursor: pointer; " :class="getClase2(0)">Planta empacadora</a>
+                            <a v-on:click="mostrarTexto2(1)" style="cursor: pointer;" :class="getClase2(1)">Cultivo</a>
+                            <a v-on:click="mostrarTexto2(2)" style="cursor: pointer;" :class="getClase2(2)">Calidad</a>
                         </div>
                     </div>
-                    <div class="calidad-button">
+                    <div class="calidad-button" v-on:click="adelante2">
                         <button><svg class="chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
