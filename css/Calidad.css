@@ -1,4 +1,4 @@
-.politica {
+.calidad {
     display: grid;
     grid-template-columns: 60% 40%;
     max-width: 1080px;
@@ -6,19 +6,19 @@
     margin-top: 20px;
 }
 
-.politica-container {
+.calidad-container {
     padding: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
 }
 
-.politica-button {
+.calidad-button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.politica-button button {
+.calidad-button button {
     width: 42px;
     height: 42px;
     display: flex;
@@ -27,42 +27,42 @@
     border: none;
     border-radius: 50%;
     background-color: var(--verde_claro);
-    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.30);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.30);
 }
 
-.politica-button button:hover {
+.calidad-button button:hover {
     cursor: pointer;
 }
 
-.politica-button .chevron {
+.calidad-button .chevron {
     margin: 0;
     width: 25px;
 }
 
-.politica-info {
+.calidad-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
 }
 
-.politica-info h2{
+.calidad-info h2 {
     font-weight: 400;
     font-size: 60px;
     color: var(--verde_oscuro);
     line-height: 80px;
 }
 
-.politica-info p{    
+.calidad-info p {
     font-size: 15px;
 }
 
-.politica-info .buttons-container {
+.calidad-info .buttons-container {
     margin-top: 20px;
     display: flex;
 }
 
-.politica-info a{
+.calidad-info a {
     margin-right: 20px;
     padding: 10px 15px;
     display: flex;
@@ -74,58 +74,51 @@
     border-radius: 10px;
     border: solid 1px var(--verde_claro);
     background-color: white;
-    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.30);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.30);
     transition: all 500ms;
 }
 
-.politica-info a:hover {
+.calidad-info a:hover {
     transition: none;
     color: white;
     background-color: var(--verde_claro);
 }
 
-.politica svg {
+.calidad svg {
     color: #fff;
     width: 25px;
     margin-left: 10px;
 }
 
-.politica-imges {
+.calidad-imges {
     padding: 20px;
     display: flex;
     align-items: center;
 }
 
-.politica-imges img {
+.calidad-imges img {
     max-width: 100%;
 }
 
 @media (max-width:895px) {
-
-    .politica{
+    .calidad {
         grid-template-columns: 100%
     }
-
-    .politica-imges{
+    .calidad-imges {
         justify-content: center;
         order: 0;
     }
-
-    .politica-container{
+    .calidad-container {
         order: 1;
         padding: 20px 50px;
     }
-
-    .politica-imges img{
+    .calidad-imges img {
         width: 70%;
     }
-
-    .politica-info{
+    .calidad-info {
         text-align: center;
     }
-
-    .buttons-container{
+    .buttons-container {
         justify-content: center;
     }
-    
 }
