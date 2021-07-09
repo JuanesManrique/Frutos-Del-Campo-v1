@@ -11,6 +11,8 @@ const app = new Vue({
         ],
         posicionActual: 0,
         isCollapsed: true,
+        isOpen: true,
+        cambiomodal: false,
         texts: [{
                 title: "¿Quiénes somos?",
                 paragraph: "Frutos del Campo, es una cooperativa de trabajo asociado, constituida en el año 2018 en el municipio de Villavicencio, Departamento del Meta (Colombia). Formada por un grupo de agricultores e ingenieros con más de 15 años de experiencia demostrable en la siembra distribución y comercialización de frutas a nivel nacional e internacional.",
@@ -68,14 +70,11 @@ const app = new Vue({
                 behavior: 'smooth'
             })
         },
-        abrirModal: function() {
-            document.getElementById("modal").style.display = "grid"
+
+
+        toggleModal:function() {
+            this.cambiomodal = !this.cambiomodal
         },
-
-        closeModal: function() {
-            document.getElementById("modal").style.display = "none !importan"
-        }
-
     },
 
     computed: {
@@ -85,8 +84,17 @@ const app = new Vue({
             }
             return "nav"
         },
-    }
 
+        modal(){
+            if(this.cambiomodal){
+                return "modalAbierta"
+            }
+            return "modalCerrada"
+        }
+
+
+
+    }
 });
 
 var rotar = new Swiper(".cambiar__logos", {
