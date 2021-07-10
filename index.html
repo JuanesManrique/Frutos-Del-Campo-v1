@@ -263,10 +263,11 @@
                             </svg></button>
                     </div>
                     <div class="certificate-info">
-                        <h3>Certificados</h3>
-                        <h2><strong>Registro ICA</strong></h2>
+                        
                         <transition name="fade" mode="out-in">
                             <div v-for="(certificadoDescarga, index) in certificadoDescargas" v-if="posicionActual3 == index" :key="certificadoDescarga.title">
+                                <h3>Certificados</h3>
+                                <h2><strong>Registro ICA</strong></h2>
                                 <h4>{{ certificadoDescarga.title }}</h4>
                                 <p>{{ certificadoDescarga.paragraph }}</p>
                                 <a :href="certificadoDescarga.file" target="bank" class="boton__info">Descargar certificado<svg class="w-6 h-6" fill="none"
